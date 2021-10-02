@@ -1,1 +1,0 @@
-# timeseries_competetion_-agricultural_product
