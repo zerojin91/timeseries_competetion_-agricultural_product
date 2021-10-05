@@ -240,6 +240,6 @@ def xgboost_inference(save_path):
                 idx = submission[condition].index
                 submission.loc[idx, f'{pum}_가격(원/kg)'] = result[0]
 
-    submission.to_csv(args.save_path + f"xgboost_{today}.csv", index=False)
+    submission.to_csv(args.save_path + f"output/xgboost_{today}.csv", index=False)
 
-    return print("결과 파일이", args.save_path + f"xgboost_{today}.csv", "에 저장됐습니다.")
+    return print("결과 파일이", args.save_path + f"output/xgboost_{today}.csv", "에 저장됐습니다.")
